@@ -1,16 +1,63 @@
-<h2>Login</h2>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <div class="form-group">
-    <label for="username">Username</label>
-    <input type="text" formControlName="username" class="form-control" />
+<html>
+   <head>
+   <style>
+   body
+   {
+    background:url(pec_image.jpeg);
+    background-size:cover;
+    margin:0;
+   }
 
-  </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" formControlName="password" class="form-control" />
+   input
+   {
+    width:70%;
+    outline:none;
+    padding:10px 11px
+    border:1px #aaa solid;
+    font-size:15px;
+    font-color:#000;
+    background:#fff;
+    display:block;
+    margin:20px auto;
+   }
+   #login
+   {
+     background:#19b1ca;
+     color:#fff;
+     border:none;  
+   }
+   div
+   {
+     width:25%;
+     height:400px;
+     background:rgba(128,128,128,.9);
+     box-shadow:5px 4px 43px #000000;
+     position:absolute;
+     top:60px;
+     left:480px; 
+   }
+   form
+   {
+     margin:30px auto;
+     text-align:center;
+   }
+   img
+   {
+      display:block;
+      margin:58px auto 0 auto;
+      position:relative:
+   }
+   </style>
 
-  </div>
-  <div class="form-group">
-    <button [disabled]="loading" class="btn btn-primary">Login</button>
-  </div>
-</form>
+   </head>
+   <body>
+     <div>
+       <form action="" method="post">
+         <img src="pec_logo.jpeg" height="120" width="120" align="top"/>
+         <input type="Username" name="" value="" placeholder="Username" id=""/>
+         <input type="Password" name="" value="" placeholder="Password" id=""/>
+         <input type="Submit" name="" value="LOGIN" placeholder="" id="login"/>
+     </form>
+     </div>
+   </body>
+</html>
