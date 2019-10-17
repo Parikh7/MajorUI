@@ -1,4 +1,23 @@
 .bodycss{
+width:100%;
+background-size:cover;
     background-color:red;
-    margin:100;
+    margin-right:50px;
+}
+.form
+   {
+     margin:30px auto;
+     text-align:center;
+   }
+.div{
+
+    width:100%;
+    align:center;
+     height:100%;
+     background-size:cover;
+     background:rgba(128,128,128,.9);
+     box-shadow:5px 4px 43px #000000;
+     position:left;
+     top:60px;
+     left:988888px;
 }
