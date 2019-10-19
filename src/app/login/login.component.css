@@ -4,7 +4,7 @@ width:100%;
 height:100%;
 background-size:cover;
  position: fixed;
-background-image : url('~src/assets/images/w.jpeg');
+ background-image : url('~src/assets/images/w.jpeg');
 }
 
 .alert{
@@ -22,8 +22,10 @@ background-image : url('~src/assets/images/w.jpeg');
 
 
 .img-size{
-  height:100%;
-  width:100%}
+  height:90%;
+  width:90%;
+
+  }
 
 .btn-center{
      margin: -20px -50px;
