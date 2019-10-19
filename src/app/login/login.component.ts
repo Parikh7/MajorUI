@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
     valid = false;
     submitted = false;
     returnUrl: string;
+    username: string;
     Success=false;
     constructor(
         private formBuilder: FormBuilder,private ValidationService: LoginValidator,private _router:Router
@@ -30,7 +31,9 @@ export class LoginComponent implements OnInit {
 
   Redirect(bool){
     if(bool){
-      this._router.navigate(['/home']);
+      this.username=bool//This is temporary, will fix it latter
+      this.Success=true;
+      this._router.navigate(['/home',bool]);
     }
 
   }

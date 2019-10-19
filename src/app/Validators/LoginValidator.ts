@@ -19,7 +19,7 @@ validator=false;
 
     for(let i=0;i<TempDatabase.length;i++){
       if(_.isEqual(TempDatabase[i].username,Details.username)&&_.isEqual(TempDatabase[i].password,Details.password)){
-        return true;
+        return TempDatabase[i].username;
     }
 }
  return false;
