@@ -4,7 +4,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import {LoginValidator} from '../Validators/LoginValidator'
 import { CommonModule } from '@angular/common';
-import TempDatabase from '../TempDatabase.json'
+import TempDatabase from '../TempDatabase.json';
+import 
 
 @Component({
   selector: 'app-login',
@@ -18,6 +19,7 @@ export class LoginComponent implements OnInit {
     returnUrl: string;
     username: string;
     Success=false;
+    errorMessage = "Sorry!Invalid password or username. Please check again."
     constructor(
         private formBuilder: FormBuilder,private ValidationService: LoginValidator,private _router:Router
         ){}
@@ -30,10 +32,14 @@ export class LoginComponent implements OnInit {
     }
 
   Redirect(bool){
+  \
     if(bool){
       this.username=bool//This is temporary, will fix it latter
       this.Success=true;
       this._router.navigate(['/home',bool]);
+    }
+    else{
+
     }
 
   }

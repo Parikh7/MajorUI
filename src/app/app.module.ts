@@ -10,7 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GaurdComponent } from './gaurd/gaurd.component';
 import {LoginComponent} from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import {LoginValidator} from './Validators/LoginValidator'
+import {LoginValidator} from './Validators/LoginValidator';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {LoginValidator} from './Validators/LoginValidator'
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
