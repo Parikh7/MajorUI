@@ -4,6 +4,51 @@
       "Updates": ["New introductory course available. Visit http://faculty.iitr.ac.in/~sudiproy.fcs/courses/csn101_2017.html "],
       "Assignments":["P&B example pseudo code to be submitted on 11th November"],
       "Quiz": ["Quiz on 15th Nov. Syllabus upto graphs."]
+    },
+    "CSN102": {
+      "Updates": ["Professor on leave for a week"],
+      "Assignments": ["Dijkstras Algorithm Code to be submitted before 1st November 2019"],
+      "Quiz": ["Quiz on 20th Nov. Syllabus upto Dijikstras algo."]
+    },
+    "CSN203": {
+      "Updates": ["Data Structures Course to be completed from Coursera, source already informed in class"],
+      "Assignments": ["Heap sort and Binary sort algorithm to be coded within this week for lab evaluation"],
+      "Guest lecture": ["geeksforgeeks founder will deliver a lecture on data Structures and its uses in the industry on 16th November 2019." ],
+      "Quiz": ["Quiz on whatever has been completed in class upto 9th November"]
+    },
+    "CSN205": {
+      "Updates": ["Feedback form to be filled for Course CSN205 on 1st november 2019"],
+      "Assignments": ["Display different forms of inheritance in C++ in the upcoming lab."],
+      "Quiz": [" No upcoming quizzes"]
+    },
+    "CSN 204":{
+      "Updates": ["All the students must install MySQL for the next lab"],
+      "Assignments": ["Draw an ER diagram for the project selected by your team and submit the same on 10th November"],
+      "Quiz": ["Quiz on 14th November, syllabus upto ACID properties"]
+    },
+    "CSN306": {
+      "Updates": ["Class to be held on 8th November is rescheduled to 11th November 1pm"],
+      "Assignments": ["All circle drawing algorithms to be evaluated in upcoming labs"],
+      "Quiz": ["Quiz will be taken anyday within the next week."]
+    },
+    "CSN307": {
+      "Updates": ["Presentations will resume from roll number 17103067 onwards from the next class"],
+      "Guest Lectures": ["Amex CEO to present a lecture on Artificial Intelligence and its use in the industry on 14th November"],
+      "Assignments": ["No upcoming assignments"],
+      "Quiz": ["No upcoming quizzes"]
+    },
+    "CSN403": {
+      "Updates": ["Class cancelled on 18th November"],
+      "Assignments": ["Submit the assignment sent over email by 7th November"],
+      "Quiz": ["Quiz upto LEACH in the upcoming week"]
+    },
+    "CSN405": {
+      "Updates": ["Extra class will be held on 19th November at 1pm"],
+      "Assignments": ["Write a report on the uses of Big data Analytics in the everyday world "],
+      "Quiz": ["Quiz upto PIG architecture on 15th November"]
     }
+
+
   }
+
 ]
