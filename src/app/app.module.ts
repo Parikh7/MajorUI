@@ -10,7 +10,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GaurdComponent } from './gaurd/gaurd.component';
 import {LoginComponent} from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import {LoginValidator} from './Validators/LoginValidator'
+import {LoginValidator} from './Validators/LoginValidator';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatSnackBarModule } from "@angular/material";
+import { NavbarComponent } from './navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material';
+import {MatMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,8 @@ import {LoginValidator} from './Validators/LoginValidator'
     AppComponent,
     GaurdComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
     //LoginValidator
   ],
   imports: [
@@ -28,7 +34,11 @@ import {LoginValidator} from './Validators/LoginValidator'
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NgbModule,
+    MatSnackBarModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

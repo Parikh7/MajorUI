@@ -1,217 +1,90 @@
-h1
- {
-       text-align: left;
-       font-family: "Arial";
-       /*font-size: pt;*/
-       color: #000000;
-       margin-bottom: 5px;
-       margin-left: 10px;
-
-      background-color: #ffffff;
-
-    }
-
-h2
-    {
-    margin-left: 10px;
-    font-size: 18pt;
-     text-align: center;
-
-
-    }
-.welcome
-    {
-        padding : 0%;
-             border-width: 0px;
-
-             width: 70%;
-             margin-right:0px;
-    }
-.dashboard
-    {
-             padding : 0%;
-             border-width: 0px;
-             width: 70%;
-             margin-right:0px;
-
-    }
-
-
-
-/*horizontal line*/
-hr
-{
-           border-width: 0%;
-           border-color:#27CFC0;
-           height:0px;
-           margin-bottom:0%;
-
-}
-/*tab for profile*/
-.tabprofile
-{
-
-      float: left;
-      margin-top: 0px;
-      margin-right:20px;
-      border: 0px ;
-      background-color: #767878;
-      width: 20%;
-      height: 100%;
-      top:0px;
-      left:0px;
-}
-/*profile button*/
-.tabprofile button
-{
-  display: block;
-  background-color:#767878;
-  color: white;
-  font-size: 120%;
-  font-family:"Arial";
-  font-weight: bold;
-  padding: 22px 16px;
-  width: 100%;
-  height: 100%;
-  border: 0px solid #ffffff;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  top:0px;
-  left:0px;
-}
-.tabprofile button:hover {
-  background-color: black;
-  color: #27CFC0;
-
-}
-/* other tabs */
-.tab
-  {
-      float: left;
-      border: 0px ;
-      background-color: #484B4A;
-      width: 20%;
-      height: 100%;
-      top:0px;
-      bottom:0px;
-      left:0px;
-      clear:left;
-      margin-right:20px;
-
-  }
-/* tab buttons*/
-.tab button {
-  display: block;
-  background-color:#484B4A ;
-  color: white;
-  font-size: 120%;
-  font-family:"Arial";
-  /*font-weight: bold;*/
-  padding: 22px 16px;
-  width: 100%;
-  height: 100%;
-  border: 0px solid #ffffff;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  top:0px;
-  left:0px;
+.top-banner img{
+width:100%;
+height:20%
 }
 
-.tab button:hover {
-  background-color: black;
-  color: #27CFC0;
-
-}
-.dashboard button:hover
-{
- background-color: #108486;
-}
+ .profile-img-settings{
+ width:15%;
+ height:15%;
+ border-radius: 50%;
+ }
 
 
-.dashboard button {
-  background-color: #27CFC0;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 7px;
-  margin-left: 1px;
-}
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
-.noticeboard_events
-{
-float:right;
-margin-left:0px;
-margin-top:20px;
-width:30%;
-clear:right;
+ body {
+   overflow-x: hidden;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+ }
+
+ /* Toggle Styles */
+
+ #viewport {
+   padding-left: 250px;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+ }
+
+ #content {
+   width: 100%;
+   position: absolute;
+   margin-right: 0;
+ }
+
+ .navbar{
+ height:5%}
+
+ /* Sidebar Styles */
+
+ #sidebar {
+   z-index: 1000;
+   position: fixed;
+   left: 250px;
+   width: 250px;
+   height: 100%;
+   margin-left: -250px;
+   overflow-y: auto;
+   background: #37474F;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+ }
+
+ #sidebar header {
+   background-color: #263238;
+   font-size: 20px;
+   line-height: 52px;
+   text-align: center;
+ }
+
+ #sidebar header a {
+   color: #fff;
+   display: block;
+   text-decoration: none;
+ }
+
+ #sidebar header a:hover {
+   color: #fff;
+ }
 
 
+ #sidebar .nav a{
+   background: none;
+   border-bottom: 1px solid #455A64;
+   color: #CFD8DC;
+   font-size: 14px;
+   padding: 16px 24px;
+ }
 
-}
+ #sidebar .nav a:hover{
+   background: none;
+   color: #ECEFF1;
+ }
 
-.noticeboard
-{
-background-color:#D9E0E0;
-width:90%;
-height:170px;
-border-radius: 15px;
-
-
-}
-
-.marq
-{
-direction:down;
-width:90%;
-height:100%;
-}
-
-.events
-{
-background-color:#D9E0E0;
-width:90%;
-height:170px;
-border-radius: 15px;
-}
-
-.dropdown_subject
-{
-display: none;
-  position: absolute;
- width: 20%;
-
-
-}
-
-.subject:hover .dropdown_subject
-{
-display:block;
-
-}
-
-.dropdown_subject:hover
-{
-background-color:black;
-}
-
-.tab:active {
-  background-color: black;
-  color: #27CFC0;
-
-}
-
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
+ #sidebar .nav a i{
+   margin-right: 16px;
+ }
