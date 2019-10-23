@@ -8,7 +8,7 @@
     "CSN102": {
       "Updates": ["Professor on leave for a week"],
       "Assignments": ["Dijkstras Algorithm Code to be submitted before 1st November 2019"],
-      "Quiz": ["Quiz on 20th Nov. Syllabus upto Dijikstras algo."]
+      "Quiz": ["Quiz on 20th Nov. Syllabus upto Dijikstras algorithm."]
     },
     "CSN203": {
       "Updates": ["Data Structures Course to be completed from Coursera, source already informed in class"],
@@ -46,9 +46,23 @@
       "Updates": ["Extra class will be held on 19th November at 1pm"],
       "Assignments": ["Write a report on the uses of Big data Analytics in the everyday world "],
       "Quiz": ["Quiz upto PIG architecture on 15th November"]
+    },
+    "IEEE": {
+      "Events": ["Upcoming IntraPEC hackathon competition on 12th November 2019, registeration to be done before 8th November 2019 "],
+      "Session": ["Session on placement/internship preparation on 6th November 2019 at 5pm in L28"]
+    },
+    "SAASC": {
+      "Events": ["JAM event to take place in T1-T3 on 6th November at 5pm, GD event to take place in T1-T3 on 7th November"],
+      "Sessions": ["Meeting of all 4th yearities on 4th November 2019 at 5pm on library stairs."]
+    },
+    "English Editorial Board": {
+      "Events": ["Extempore competition on 7th November in the auditorium at 5pm"],
+      "Sessions": ["All members of the English editorial board should be present in the meeting to be held on 6th november in L26 "]
+    },
+    "Robotics Club": {
+      "Events": ["Robo-race registrations have opened on 28th October 2019. Register as soon as possible."],
+      "Sessions": ["First year students can attend Robotics Basics workshop on 7th November in L22 at 5pm."]
     }
-
-
   }
 
 ]
