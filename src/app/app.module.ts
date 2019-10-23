@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 import {LoginValidator} from './Validators/LoginValidator';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatSnackBarModule } from "@angular/material";
+import { NavbarComponent } from './navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material';
+import {MatMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { MatSnackBarModule } from "@angular/material";
     AppComponent,
     GaurdComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
     //LoginValidator
   ],
   imports: [
@@ -32,7 +36,9 @@ import { MatSnackBarModule } from "@angular/material";
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
     NgbModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
