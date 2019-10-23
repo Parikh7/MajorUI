@@ -4,6 +4,11 @@
 
   },
   {
-    "ToDo List": ["SNGC Assingment due on 21st Oct","AeroSpace quiz on 1st November","Aerospace Report Due"];
+    "ToDo List": [
+      "SNGC Assingment due on 21st Oct",
+      "AeroSpace quiz on 1st November",
+      "Aerospace Report Due"
+    ]
+    ;
   }
 ]
