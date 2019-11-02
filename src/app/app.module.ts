@@ -16,6 +16,8 @@ import { MatSnackBarModule } from "@angular/material";
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatIconModule}  from "@angular/material"
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import {MatMenuModule} from '@angular/material';
     NgbModule,
     MatSnackBarModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    FlexLayoutModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
