@@ -17,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
 import {FlexLayoutModule} from "@angular/flex-layout";
-import {MatIconModule}  from "@angular/material"
+import {MatIconModule}  from "@angular/material";
+import { RegisterationComponent } from './registeration/registeration.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatIconModule}  from "@angular/material"
     GaurdComponent,
     LoginComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    RegisterationComponent
     //LoginValidator
   ],
   imports: [
