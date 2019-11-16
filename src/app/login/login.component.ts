@@ -19,6 +19,8 @@ export class LoginComponent implements OnInit {
     returnUrl: string;
     username: string;
     Success=false;
+    try:any;
+    image: any;
     errorMessage = "Sorry! Invalid username or password."
     constructor(
         private formBuilder: FormBuilder,private ValidationService: LoginValidator,private _router:Router,private snackbar:MatSnackBar

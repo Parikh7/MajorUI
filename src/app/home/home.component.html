@@ -101,6 +101,7 @@
 
 
 <app-navbar></app-navbar>
+<input type="file" accept="image/*" (change)="changeListener($event)">
 <body>
 <div class="container-fluid">
   <div id="viewport">
@@ -156,7 +157,7 @@
        <div class="row">
          <div class="col-md-6 well">
             <p>Welcome {{userData.name}} </p>
-           <img src="assets/images/IMG_4925.jpg" class="profile-img-settings">
+           <img src="{{try}}" class="profile-img-settings">
            <ngb-tabset>
              <ngb-tab title="Time Table">
                <ng-template ngbTabContent>
