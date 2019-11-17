@@ -107,46 +107,11 @@
   <div id="viewport">
     <!-- Sidebar -->
     <div id="sidebar">
-      <header>
-        <a href="#">My Profile</a>
-      </header>
-      <ul class="nav">
-        <li>
-          <a href="#">
-            <i class="zmdi zmdi-view-dashboard"></i> Registration
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="zmdi zmdi-link"></i> Societies
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="zmdi zmdi-widgets"></i> Attendance
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="zmdi zmdi-calendar"></i> Assignments
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="zmdi zmdi-info-outline"></i> Quizzes
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="zmdi zmdi-settings"></i> PEC
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="zmdi zmdi-comment-more"></i> Contact
-          </a>
-        </li>
-      </ul>
+      <div class="col-md-6">
+        <div style="display: flex; justify-content: center;">Welcome</div>
+        <img src="{{try}}" class="profile-img-settings">
+        <div style="display: flex; justify-content: center;">{{userData.name}}</div>
+      </div>
     </div>
 
 
@@ -157,7 +122,7 @@
        <div class="row">
          <div class="col-md-6 well">
             <p>Welcome {{userData.name}} </p>
-           <img src="{{try}}" class="profile-img-settings">
+
            <ngb-tabset>
              <ngb-tab title="Time Table">
                <ng-template ngbTabContent>

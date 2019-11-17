@@ -21,18 +21,9 @@ export class HomeComponent implements OnInit {
   this.try=localStorage.getItem("token");
   this._sanitizer.bypassSecurityTrustResourceUrl("data:image/jpg;base64"+this.try);
    localStorage.clear();
+
     this.username=this.route.snapshot.paramMap.get('id');
     this.FetchTheDetails(this.username);
-  }
-  dataURItoBlob(dataURI){
-  const byteString = window.atob(dataURI);
-     const arrayBuffer = new ArrayBuffer(byteString.length);
-     const int8Array = new Uint8Array(arrayBuffer);
-     for (let i = 0; i < byteString.length; i++) {
-       int8Array[i] = byteString.charCodeAt(i);
-     }
-     const blob = new Blob([int8Array], { type: 'image/jpeg' });
-     return blob;
   }
 
 
@@ -40,7 +31,12 @@ export class HomeComponent implements OnInit {
     for(let i=0;i<TempDatabase.length;i++){
           if(_.isEqual(TempDatabase[i].username,username)){
             this.userData=TempDatabase[i];
+            if(this.try){
+            TempDatabase[i]["image"]=this.try;
+            }
+            //TempDatabase[i]=this.userData;
         }
+     console.log(this.userData);
 
   }
   console.log(this.userData);
