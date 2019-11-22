@@ -1,7 +1,7 @@
 <!--<mat-toolbar>
   <mat-toolbar-row>
 
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>ng serve
     <mat-menu #menu="matMenu">
       <button mat-menu-item>Item 1</button>
       <button mat-menu-item>Item 2</button>
@@ -51,13 +51,15 @@
           <li ><a href="#"> <i class="fa fa-calendar" aria-hidden="true"></i> TimeTable  </a></li>
           <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i> My Courses </a></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown"  href="dropdown-menu" > Utilities
+            <a class="dropdown-toggle" data-toggle="dropdown"  href="#"> Utilities
               <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a  href="#"> Registration </a></li>
-              <li><a  href="#"> Societies </a></li>
-              <li><a  href="#"> Attendance </a></li>
-            </ul>
+            <div class="dropdown-content">
+
+              <a  href="#"> Registration </a>
+              <a  href="#"> Societies </a>
+              <a  href="#"> Attendance </a>
+
+            </div>
 
           </li>
 

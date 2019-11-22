@@ -16,6 +16,9 @@ import { MatSnackBarModule } from "@angular/material";
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
+import { SocietiesComponent } from './societies/societies.component';
+import { NewsfeedComponent } from './newsfeed/newsfeed.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import {MatMenuModule} from '@angular/material';
     GaurdComponent,
     LoginComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    SocietiesComponent,
+    NewsfeedComponent
     //LoginValidator
   ],
   imports: [
