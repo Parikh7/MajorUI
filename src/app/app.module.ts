@@ -25,6 +25,8 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SubjectsComponent } from './subjects/subjects.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {DialogOverviewExampleDialog} from './navbar/DialogOverviewExampleDialog'
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { SubjectsComponent } from './subjects/subjects.component';
     FeedComponent,
     RegistrationComponent,
     ProfileComponent,
-    SubjectsComponent
+    SubjectsComponent,
+    DialogOverviewExampleDialog
     //LoginValidator
   ],
   imports: [
@@ -56,7 +59,11 @@ import { SubjectsComponent } from './subjects/subjects.component';
     MatIconModule,
     MatCardModule,
     AngularMultiSelectModule,
-    NgMultiSelectDropDownModule
+    NgMultiSelectDropDownModule,
+   MatDialogModule,
+  ],
+  entryComponents: [
+  DialogOverviewExampleDialog
   ],
   providers: [],
   bootstrap: [AppComponent]

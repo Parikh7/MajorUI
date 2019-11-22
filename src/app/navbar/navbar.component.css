@@ -4,3 +4,10 @@
 .mat-toolbar.mat-primary{
   background: #8C1515
 }
+/deep/ .mat-dialog-container{
+max-height: 60% !important;
+max-width:60% !important;
+position:fixed !important;
+left:25% !important;
+top:25% !important;
+}

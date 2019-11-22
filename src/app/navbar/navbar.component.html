@@ -2,7 +2,7 @@
   <mat-toolbar-row>
     <span class="example-fill-remaining-space"></span>
     <i style="padding-right:10px;" class="fa fa-home fa-lg" aria-hidden="true"></i>
-    <i style="padding-right:10px;" class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+    <i style="padding-right:10px;" class="fa fa-calendar fa-lg" aria-hidden="true"(click)="openDialog()"></i>
     <i style="padding-right:10px;" class="fa fa-bell fa-lg" aria-hidden="true"></i>
     <i class="fa fa-user-circle fa-lg" aria-hidden="true" [matMenuTriggerFor]="menu"></i>
     <mat-menu #menu="matMenu">

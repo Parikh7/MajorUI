@@ -43,7 +43,6 @@ export class HomeComponent implements OnInit {
         }
 
   }
-  console.log(this.userData);
   }
   ViewReg(data){
   this.profile=false;
