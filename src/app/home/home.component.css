@@ -183,12 +183,12 @@ body, html, .container-fluid {
 
 .card
 {
-width: 300px;
+width: 275px;
  /*height: 430px;*/
  background: #e6e6e6;
  /*border-radius: 4px;*/
  position: absolute;
- top: 50%;
+
  left: 5%;
 
  /*transform: translate(0%,0%);*/
@@ -196,6 +196,7 @@ width: 300px;
  overflow: visible;
  display: inline;
  border-color: black;
+ padding:2%;
 }
 
 .card-body
@@ -206,14 +207,28 @@ margin-left:5%;
 
 .mat-card
 {
- float: bottom;
- margin-top:150%;
+ /*float: bottom;*/
+ /*margin-top:150%;*/
  width:275px;
   box-shadow: 0px 1px 5px 1px #000;
-  top:5%;
+
   height:275px;
   padding:2%;
 
 }
 
+.tags
+{
+    margin-top:150%;
+}
 
+.events
+{
+  margin-top:70%;
+}
+
+.marq
+{
+display:inline-block;
+height:220px;
+}
