@@ -2,54 +2,55 @@
 <app-navbar></app-navbar>
 <input type="file" accept="image/*" (change)="changeListener($event)">
 <body>
+
+<!--<div class="col-md-4">-->
 <div class="container-fluid">
-  <div id="viewport">
-    <!-- Sidebar -->
-    <div id="sidebar">
-      <div class="col-md-6">
-        <div style="display: flex; justify-content: center;">Welcome</div>
-        <img src="{{try}}" class="profile-img-settings">
-        <div style="display: flex; justify-content: center;">{{userData.name}}</div>
+  <div class="row">
+    <div class="col-md-3" >
+      <div class="card-container">
+
+
+
+        <div class="upper-container">
+          <div class="image-container">
+            <img src="assets/images/IMG_4925.jpg" class="profile-img-settings"/>
+          </div>
+        </div>
+
+        <div class="lower-container">
+          <div>
+            <h3>Welcome</h3>
+            <h4>{{userData.name}}</h4>
+          </div>
+          <div>
+            <br/>
+            <br/>
+            <a href="#" class="btn">View profile</a>
+          </div>
+        </div>
       </div>
     </div>
+    <!--newsfeed-->
+    <div class="col-md-6">
+      <app-feed></app-feed>
+    </div>
+    <!--right panel-->
+    <div class="col-md-3" >
 
-    <app-feed></app-feed>
-    <!-- Content -->
-    <div style="float:right" id="content">
-
-      <div class="container-fluid">
-       <div class="row">
-         <div class="col-md-4">
-           <div class="panel-body">
-               <div class="panel panel-default">
-                 <div class="panel-heading">
-                   <h4 class="panel-title">
-                       <i class="fa fa-home"></i> &nbsp; Notifications
-                   </h4>
-                 </div>
-                 <div id="collapseOne" class="panel-collapse collapse in">
-                   <div class="panel-body">
-                     <ul class="list-group">
-                       <li style="color:red" class="list-group-item">SNGC Assingment due on 21st Oct</li>
-                       <li class="list-group-item">Deepawali Holiday on 28th Oct</li>
-                     </ul>
-                   </div>
-                 </div>
-               </div>
-
-
-                 </div>
-
-             </div>
-           </div>
-         </div>
-       </div>
-
-
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fa fa-bell" aria-hidden="true"></i><b> Notifications</b></h3>
+          <ul>
+            <li>SNGC Assingment due on 21st Oct.</li>
+            <li>Deepawali Holiday on 28th Oct</li>
+            <li>End sems from 25th Dec</li>
+            <li>WSN Quiz on 30 Nov</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-
 </div>
+
 
 </body>
