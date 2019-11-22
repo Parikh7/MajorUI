@@ -2,17 +2,30 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatInputModule} from '@angular/material/input';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { IDropdownSettings } from 'ng-multiselect-dropdown';
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',
   styleUrls: ['./feed.component.css']
 })
 export class FeedComponent implements OnInit {
+QueryForm: FormGroup;
   subjects: any;
   userdata:any;
  feed  = [];
-  constructor(private http: HttpClient,private route: ActivatedRoute) { }
+  constructor(private formBuilder: FormBuilder,private http: HttpClient,private route: ActivatedRoute) { }
+
+
+
+  onSubmit(){
+  console.log(this.QueryForm.value);
+  }
+
+
+
 
   getusers(){
     return this.http.get("http://localhost:3000/users");
@@ -21,6 +34,9 @@ export class FeedComponent implements OnInit {
     return this.http.get("http://localhost:3000/subjects");
   }
   ngOnInit() {
+  this.QueryForm = this.formBuilder.group({
+                  update: '',
+              });
   var user=this.route.snapshot.paramMap.get('id');
   this.getTags(user);
   this.getusers();

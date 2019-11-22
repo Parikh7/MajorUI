@@ -21,6 +21,8 @@ import {MatIconModule}  from "@angular/material";
 import { RegisterationComponent } from './registeration/registeration.component';
 import { FeedComponent } from './feed/feed.component'
 import {MatCardModule} from '@angular/material/card';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import {MatCardModule} from '@angular/material/card';
     MatMenuModule,
     FlexLayoutModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    AngularMultiSelectModule,
+    NgMultiSelectDropDownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

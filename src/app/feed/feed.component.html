@@ -1,4 +1,13 @@
 <body>
+<form [formGroup]="QueryForm" (ngSubmit)="onSubmit()" class="form">
+  <div class="form-group">
+  <input  style="width: 55%;min-height: 100px;" type="text" formControlName="update" class="form-control" />
+    <span class="form-group">
+      <button [disabled]="loading" class="btn btn-danger btn-rounded btn-center">Submit</button>
+    </span>
+    <span class="example-fill-remaining-space"></span>
+  </div>
+</form>
   <div *ngFor="let data of feed">
     <mat-card>
       <mat-card-title style="color:#8C1515">{{data.val}}</mat-card-title>
