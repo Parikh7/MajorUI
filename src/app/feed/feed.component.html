@@ -1,0 +1,14 @@
+<body>
+  <div *ngFor="let data of feed">
+    <mat-card>
+      <mat-card-title style="color:#8C1515">{{data.val}}</mat-card-title>
+      <div *ngFor="let item of data.update[0] | keyvalue">
+        <mat-card-subtitle>{{item.key}}</mat-card-subtitle>
+        <mat-card-content>
+        {{ item.value }}
+        </mat-card-content>
+      </div>
+      <span>{{" "}}</span>
+    </mat-card>
+  </div>
+</body>

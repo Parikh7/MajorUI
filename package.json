@@ -9,7 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "json-server": "json-server --watch TempDatabase.json --port 3000"
-
   },
   "private": true,
   "dependencies": {
@@ -26,6 +25,7 @@
     "@angular/router": "~8.2.9",
     "@ng-bootstrap/ng-bootstrap": "^5.1.1",
     "angular-font-awesome": "^3.1.2",
+    "angular2-twitter-bootstrap": "^0.1.4",
     "bootstrap": "^3.4.1",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",

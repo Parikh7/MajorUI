@@ -56,7 +56,6 @@ export class HomeComponent implements OnInit {
       }
       fun(i){
       var foo=i;
-      console.log(i);
       localStorage.setItem("token", foo);
       location.reload();
       }

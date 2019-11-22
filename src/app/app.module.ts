@@ -18,7 +18,9 @@ import {MatToolbarModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatIconModule}  from "@angular/material";
-import { RegisterationComponent } from './registeration/registeration.component'
+import { RegisterationComponent } from './registeration/registeration.component';
+import { FeedComponent } from './feed/feed.component'
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { RegisterationComponent } from './registeration/registeration.component'
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    RegisterationComponent
+    RegisterationComponent,
+    FeedComponent
     //LoginValidator
   ],
   imports: [
@@ -45,6 +48,7 @@ import { RegisterationComponent } from './registeration/registeration.component'
     MatMenuModule,
     FlexLayoutModule,
     MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
