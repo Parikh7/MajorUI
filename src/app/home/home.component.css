@@ -9,6 +9,9 @@ height:20%
  border-radius: 50%;
  }
 
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
 
  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 
@@ -118,7 +121,7 @@ body{
 .image-container{
  background: white;
  width: 80px;
- height: 100px;
+ height: 90px;
  border-radius: 50%;
  padding: 5px;
  transform: translate(100px,100px);

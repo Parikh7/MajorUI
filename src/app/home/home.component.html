@@ -1,8 +1,8 @@
 
 <app-navbar></app-navbar>
-<input type="file" accept="image/*" (change)="changeListener($event)">
 <body>
-
+<span class="example-fill-remaining-space"></span>
+<span class="example-fill-remaining-space"></span>
 <!--<div class="col-md-4">-->
 <div class="container-fluid">
   <div class="row">
@@ -20,26 +20,42 @@
         <div class="lower-container">
           <div>
             <h3>Welcome</h3>
-            <h4>{{userData.name}}</h4>
+            <h4 style="color:#8C1515;">{{userData.name}}</h4>
           </div>
           <div>
             <br/>
             <br/>
-            <a href="#" style="background: #8C1515" class="btn">View profile</a>
+            <button style="background:#8C1515;"  class="btn btn-danger btn-rounded btn-center" (click)="ViewHome($event)">Home</button>
+            <span class="example-fill-remaining-space"></span>
+            <button style="background:#8C1515;"  class="btn btn-danger btn-rounded btn-center" (click)="ViewProf($event)">View Profile</button>
+            <span class="example-fill-remaining-space"></span>
+            <button style="background:#8C1515;"  class="btn btn-danger btn-rounded btn-center" (click)="ViewReg($event)">Registration</button>
+            <span class="example-fill-remaining-space"></span>
+            <button style="background:#8C1515;"  class="btn btn-danger btn-rounded btn-center" (click)="ViewSub($event)">Subjects</button>
           </div>
         </div>
       </div>
     </div>
     <!--newsfeed-->
-    <div class="col-md-6">
+    <div *ngIf="newsFeed" class="col-md-6">
       <app-feed></app-feed>
     </div>
+    <div *ngIf="registration" class="col-md-6">
+      <app-registration></app-registration>
+    </div>
+    <div *ngIf="profile" class="col-md-6">
+      <app-profile></app-profile>
+    </div>
+    <div *ngIf="subjects" class="col-md-6">
+      <app-subjects></app-subjects>
+    </div>
+
     <!--right panel-->
     <div class="col-md-3" >
 
       <div class="card">
         <div class="card-body">
-          <h3 class="card-title"><i class="fa fa-bell" aria-hidden="true"></i><b> Notifications</b></h3>
+          <h3 style="color:#8C1515;" class="card-title"><i class="fa fa-bell" aria-hidden="true"></i><b> Notifications</b></h3>
           <ul>
             <li>SNGC Assingment due on 21st Oct.</li>
             <li>Deepawali Holiday on 28th Oct</li>

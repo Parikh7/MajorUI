@@ -10,6 +10,10 @@ import  _ from 'lodash';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  newsFeed: boolean;
+  registration:boolean;
+  profile:boolean;
+  subjects:boolean;
   userData: {};
   username: string;
   try: any;
@@ -18,6 +22,7 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute,private _sanitizer: DomSanitizer) { }
 
   ngOnInit() {
+  this.newsFeed=true;
   this.try=localStorage.getItem("token");
   this._sanitizer.bypassSecurityTrustResourceUrl("data:image/jpg;base64"+this.try);
    localStorage.clear();
@@ -36,10 +41,33 @@ export class HomeComponent implements OnInit {
             }
             //TempDatabase[i]=this.userData;
         }
-     console.log(this.userData);
 
   }
   console.log(this.userData);
+  }
+  ViewReg(data){
+  this.profile=false;
+  this.newsFeed=false;
+  this.registration=true;
+  this.subjects=false;
+  }
+  ViewProf(data){
+  this.newsFeed=false;
+  this.registration=false;
+  this.profile=true;
+  this.subjects=false;
+  }
+  ViewHome(data){
+  this.newsFeed=true;
+    this.registration=false;
+    this.profile=false;
+    this.subjects=false;
+  }
+  ViewSub(data){
+    this.newsFeed=false;
+      this.registration=false;
+      this.profile=false;
+      this.subjects=true;
   }
 
   AfterViewInit(){

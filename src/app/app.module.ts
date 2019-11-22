@@ -18,11 +18,13 @@ import {MatToolbarModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatIconModule}  from "@angular/material";
-import { RegisterationComponent } from './registeration/registeration.component';
 import { FeedComponent } from './feed/feed.component'
 import {MatCardModule} from '@angular/material/card';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { RegistrationComponent } from './registration/registration.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SubjectsComponent } from './subjects/subjects.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +34,10 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    RegisterationComponent,
-    FeedComponent
+    FeedComponent,
+    RegistrationComponent,
+    ProfileComponent,
+    SubjectsComponent
     //LoginValidator
   ],
   imports: [
