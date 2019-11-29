@@ -1,1 +1,16 @@
-<p>subjects works!</p>
+<mat-accordion>
+  <div *ngFor="let sub of subs">
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{sub.CourseCode}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{sub.Info}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+  </div>
+</mat-accordion>

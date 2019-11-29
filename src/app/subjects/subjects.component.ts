@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {MatInputModule} from '@angular/material';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 @Component({
   selector: 'app-subjects',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subjects.component.css']
 })
 export class SubjectsComponent implements OnInit {
-
+  panelOpenState = false;
+  subs=[
+  {"CourseCode":"CSN 101","Info":"test"},{},{}
+  ];
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

@@ -27,6 +27,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {DialogOverviewExampleDialog} from './navbar/DialogOverviewExampleDialog'
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,7 @@ import {DialogOverviewExampleDialog} from './navbar/DialogOverviewExampleDialog'
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
     NgbModule,
+    MatFormFieldModule,
     MatSnackBarModule,
     MatToolbarModule,
     MatMenuModule,
@@ -61,6 +64,7 @@ import {DialogOverviewExampleDialog} from './navbar/DialogOverviewExampleDialog'
     AngularMultiSelectModule,
     NgMultiSelectDropDownModule,
    MatDialogModule,
+   MatExpansionModule
   ],
   entryComponents: [
   DialogOverviewExampleDialog
