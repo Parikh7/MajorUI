@@ -9,7 +9,15 @@ export class ProfileComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  comments: string;
+    count: number;
+
+
+    ngOnInit() {
+      this.count = 0;
+    }
+
+
+
 
 }

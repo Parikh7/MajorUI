@@ -15,6 +15,8 @@ export class FeedComponent implements OnInit {
 QueryForm: FormGroup;
   subjects: any;
   userdata:any;
+  comments: string;
+  count: number;
  feed  = [];
   constructor(private formBuilder: FormBuilder,private http: HttpClient,private route: ActivatedRoute) { }
 
@@ -24,14 +26,22 @@ QueryForm: FormGroup;
   console.log(this.QueryForm.value);
   }
 
-
+  receiveComment($event) {
+           this.comments = $event;
+           this.count = this.comments.length;
+           console.log(this.comments.length);
+         }
+  recieveCount($event) {
+           this.comments = $event;
+           this.count = this.comments.length;
+         }
 
 
   getusers(){
     return this.http.get("http://localhost:3000/users");
   }
   getSubjects(){
-    return this.http.get("http://localhost:3000/subjects");
+    return this.http.get("http://localhost:3000/tags");
   }
   ngOnInit() {
   this.QueryForm = this.formBuilder.group({

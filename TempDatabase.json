@@ -4,7 +4,8 @@
       "username": "be16103045",
       "password": "test",
       "name": "Parikh Oberoi",
-      "tags": ["CSN101","CSN203","SAASC","CSN403","CSN405"]
+      "tags": ["CSN101","CSN203","SAASC","CSN403","CSN405"],
+      "subjects": ["CSN101","CSN203","CSN204"]
     },
     {
       "username": "Add your SID",
@@ -17,12 +18,16 @@
 
 
 
-  "subjects": [
+  "tags": [
     {
       "CSN101": {
         "Updates": ["New introductory course available. Visit http://faculty.iitr.ac.in/~sudiproy.fcs/courses/csn101_2017.html "],
         "Assignments":["P&B example pseudo code to be submitted on 11th November"],
         "Quiz": ["Quiz on 15th Nov. Syllabus upto graphs."]
+      },
+      "SAASC": {
+        "Events": ["JAM event to take place in T1-T3 on 6th November at 5pm, GD event to take place in T1-T3 on 7th November"],
+        "Sessions": ["Meeting of all 4th yearities on 4th November 2019 at 5pm on library stairs."]
       },
       "CSN102": {
         "Updates": ["Professor on leave for a week"],
@@ -40,7 +45,7 @@
         "Assignments": ["Display different forms of inheritance in C++ in the upcoming lab."],
         "Quiz": [" No upcoming quizzes"]
       },
-      "CSN 204":{
+      "CSN204":{
         "Updates": ["All the students must install MySQL for the next lab"],
         "Assignments": ["Draw an ER diagram for the project selected by your team and submit the same on 10th November"],
         "Quiz": ["Quiz on 14th November, syllabus upto ACID properties"]
@@ -69,10 +74,6 @@
       "IEEE": {
         "Events": ["Upcoming IntraPEC hackathon competition on 12th November 2019, registeration to be done before 8th November 2019 "],
         "Session": ["Session on placement/internship preparation on 6th November 2019 at 5pm in L28"]
-      },
-      "SAASC": {
-        "Events": ["JAM event to take place in T1-T3 on 6th November at 5pm, GD event to take place in T1-T3 on 7th November"],
-        "Sessions": ["Meeting of all 4th yearities on 4th November 2019 at 5pm on library stairs."]
       },
       "English Editorial Board": {
         "Events": ["Extempore competition on 7th November in the auditorium at 5pm"],

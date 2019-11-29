@@ -33,6 +33,7 @@
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "ng-multiselect-dropdown": "^0.2.9",
+    "ng2-comment": "0.0.9",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

@@ -1,0 +1,27 @@
+<div class="comments" *ngIf="postComment!==undefined">
+    <h6 *ngIf="postComment?.length<1">No Comments found</h6>
+    <ul *ngIf="postComment?.length>0">
+        <li style="padding-bottom:10px" *ngFor="let post of postComment; let i = index;">
+            <div class="col-9 col-sm-9 comment-container">
+                    <span>{{post.commentTxt}}</span>
+                    <div class="actions">
+                        <span style="padding-right:100px;color: #8C1515;">{{"Posted By: " + user}}</span>
+                        <button style="background:#8C1515;" class="btn btn-sm btn-info"  (click)="replyComment(i)">
+                            Reply
+                        </button>
+                        <span class="divider"></span>
+                </div>
+                <div class="childCommentBox">
+                    <div datacontainer></div>
+                    <ul *ngIf="post?.replyComment?.length>0">
+                        <li *ngFor="let rl of post.replyComment">
+                            <div class="col-3 col-sm-3 comment-container">
+                                    <span>{{rl.commentTxt}}</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

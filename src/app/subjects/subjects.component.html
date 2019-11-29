@@ -1,5 +1,5 @@
 <mat-accordion>
-  <div *ngFor="let sub of subs">
+  <div *ngFor="let sub of feed">
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
@@ -10,7 +10,23 @@
         {{sub.Info}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+    <div class="container">
+      <div class="card">
+        <div class="commentbox">
+          <div class="col-12 col-sm-12 header">
+            <h4>Comments ({{count}})</h4>
+          </div>
+          <div class="col-6 col-sm-6 body">
+            <div class="comment-container">
+              <div class="comment-form">
+                <app-commentbox (usercomment)="receiveComment($event)"></app-commentbox>
+              </div>
+            </div>
+          </div>
+        </div>
+        <app-comments [postComment]="comments" (countComments)="recieveCount($event)"></app-comments>
+      </div>
+    </div>
   </mat-expansion-panel>
   </div>
 </mat-accordion>

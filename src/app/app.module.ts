@@ -29,6 +29,11 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {DialogOverviewExampleDialog} from './navbar/DialogOverviewExampleDialog'
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CommentModule } from 'ng2-comment';
+import { CommentboxComponent } from './commentbox/commentbox.component';
+import { CommentsComponent } from './comments/comments.component';
+import { ChildboxComponent } from './childbox/childbox.component';
+import { DatacontainerDirective } from './comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +47,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     RegistrationComponent,
     ProfileComponent,
     SubjectsComponent,
+    DatacontainerDirective,
+    CommentboxComponent,
+    ChildboxComponent,
+    CommentsComponent,
     DialogOverviewExampleDialog
     //LoginValidator
   ],
@@ -67,6 +76,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
    MatExpansionModule
   ],
   entryComponents: [
+  ChildboxComponent,
   DialogOverviewExampleDialog
   ],
   providers: [],
