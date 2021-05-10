@@ -31,7 +31,7 @@
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "ng-multiselect-dropdown": "^0.2.9",
     "ng2-comment": "0.0.9",
     "rxjs": "~6.4.0",
